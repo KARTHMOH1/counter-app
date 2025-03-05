@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Container Styles */
+.container {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container-1 Styles */
+.container-1 {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Title Styles */
+.title {
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: xx-large;
+}
+
+/* Button Container */
+.container-2 {
+    display: flex;
+    justify-content: space-around; /* Distributes buttons evenly */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.increment {
+    background-color: green;
+}
+
+.decrement {
+    background-color: red;
+}
+
+.reset {
+    background-color: black;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-1 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-2 {
+        flex-direction: column; /* Stack buttons on smaller screens */
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+}
